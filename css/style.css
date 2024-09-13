@@ -1,0 +1,31 @@
+@import "./global.css";
+@import "./header.css";
+@import "./introducao.css";
+@import "./experiencia.css";
+@import "./formacao.css";
+@import "./footer.css";
+
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: inherit; /* Mantém a cor original do texto */
+}
+
+a:visited {
+  color: inherit; /* Garante que a cor do link visitado seja a mesma do texto */
+}
+
+.empresa-titulo {
+  color: #000; /* Defina a cor desejada para o título */
+  font-weight: bold; /* Defina a espessura da fonte, caso necessário */
+}
+
+.empresa-titulo a:hover {
+  text-decoration: underline; /* Apenas sublinhar ao passar o mouse, se quiser esse comportamento */
+  color: #000; /* Mantém a cor original no hover */
+}
